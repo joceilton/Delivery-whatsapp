@@ -41,19 +41,16 @@
 
                 <ul class="list-inline">
 
-                    <li class="list-inline-item"> <a class="btn btn-default text-light" href="/catalogo"> Catálogo </a> </li>
-                    <li class="list-inline-item"> <a class="btn btn-default text-light" href="/restaurantes"> restaurantes </a> </li>
+                    <li class="list-inline-item"> <a class="btn btn-default text-dark" href="/vender"> Vender </a> </li>
+                    <li class="list-inline-item"> <a class="btn btn-default text-dark" href="/restaurantes"> entregas </a> </li>
 
                 </ul>
 
             </div>
             
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 text-center">
 
-                <ul class="list-inline">
-                    <li class="list-inline-item"><a class="btn btn-default text-light" href="tel:+551437370909"> <i class="fa fa-phone"></i> (14) 3737-0909</a></li>
-                    <li class="list-inline-item"><a class="btn-icon btn-default text-light" href="https://api.whatsapp.com/send?phone=5514991066006&amp;text=Quero%20falar%20sobre%20Delivery%20App." target="_blank" rel="noopener noreferrer"> <i class="fab fa-whatsapp"></i> (14) 99106-6006</a></li>
-                </ul>
+                <button class="btn btn-secondary bg-primary"> Promoções </button>
 
             </div> 
 
@@ -65,7 +62,7 @@
 
 <section class="conteudo">
 
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row">
 
@@ -80,12 +77,12 @@
                         <div class="row">
 
                             <div class="form-group col-12 col-md-6">
-                                <label for="pedido"> <i class="fa fa-search text-light"></i> </label>
+                                <label for="pedido" class="text-light"> <i class="fa fa-search text-light"></i> Pesquisar ... </label>
                                 <input type="text" name="pedido" class="form-control" id="pedido" placeholder="O que quer pedir?">
                             </div>
 
                             <div class="form-group col-12 col-md-6">
-                                <label for="categoria"> <i class="fa fa-list-alt text-light"></i> </label>
+                                <label for="categoria" class="text-light"> <i class="fa fa-list-alt text-light"></i> Categorias </label>
                                 <input type="text" name="categoria" class="form-control" id="categoria" placeholder="Categorias">
                             </div>
 
@@ -103,7 +100,7 @@
 
                                     <div class="row">
 
-                                        <div class="col-12 col-6">
+                                        <div class="col-6">
 
                                             <h1> Pizza Grande </h1>
 
@@ -130,11 +127,11 @@
                                         </div>
 
                                         <div class="col-4">
-                                            Pizzas da Luzia
+                                            <a href="#" title="Pizzas da Luzia"> Pizzas da Luzia </a> 
                                         </div>
 
                                         <div class="col-4 text-right">
-                                            <button class="btn btn-default"> <i class="fa fa-plus"></i> </button>
+                                            <button class="btn btn-default"> <i class="fa fa-cart-plus"></i> </button>
                                         </div>
 
 
@@ -177,11 +174,11 @@
                                         </div>
 
                                         <div class="col-4">
-                                            Pizzas da Luzia
+                                            <a href="#" title="Pizzas da Luzia"> Pizzas da Luzia </a>
                                         </div>
 
                                         <div class="col-4 text-right">
-                                            <button class="btn btn-default"> <i class="fa fa-plus"></i> </button>
+                                            <button class="btn btn-default"> <i class="fa fa-cart-plus"></i> </button>
                                         </div>
 
 
@@ -216,6 +213,10 @@
 
                 </div>
 
+                <hr>
+
+                <div class="listar-pedidos">
+
                     <div class="row">
                         <div class="col-2 py-3">
                             1
@@ -226,11 +227,18 @@
                         <div class="col-4 py-3">
                             R$ 30,00
                         </div>
-                    </div>
+                    </div>     
+
+                </div>
+
+                    
 
                     <div class="row py-3">
-                        <div class="col-12">
+                        <div class="col-6">
                             <button class="btn btn-whatsapp text-light"> <i class="fab fa-whatsapp"></i> Enviar o pedido </button>
+                        </div>
+                        <div class="col-6">
+                            <p> <strong> TOTAL: </strong> R$ 30,00 </p>
                         </div>
                     </div>
 
@@ -249,7 +257,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Carrinho</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -257,40 +265,39 @@
         <div class="modal-body">
 
             <!-- Carrinho Mobile -->
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-4">
-                        <i class="fa fa-shopping-cart"></i>
+            
+            
+
+                <div class="listar-pedidos">
+
+                    <div class="row">
+                        <div class="col-2 py-3">
+                            1
+                        </div>
+                        <div class="col-6 py-3">
+                            Pizza grande
+                        </div>
+                        <div class="col-4 py-3">
+                            R$ 30,00
+                        </div>
+                    </div>     
+
+                </div>
+
+                    
+
+                    <div class="row py-3">
+                        <div class="col-6">
+                            <button class="btn btn-whatsapp text-light"> <i class="fab fa-whatsapp"></i> Enviar o pedido </button>
+                        </div>
+                        <div class="col-6">
+                            <p> <strong> TOTAL: </strong> R$ 30,00 </p>
+                        </div>
                     </div>
-                    <div class="col-8">
-                        <p class="title-carrinho"> Pedido </p>
-                    </div>
-                </div>
-            </div>
 
-        </div>
+            
 
-            <div class="row p-3">
-                <div class="col-2">
-                    1
-                </div>
-                <div class="col-6">
-                    Pizza grande
-                </div>
-                <div class="col-4">
-                    R$ 30,00
-                </div>
-            </div>
-
-            <div class="row p-3">
-                <div class="col-12">
-                    <button class="btn btn-whatsapp text-light"> <i class="fab fa-whatsapp"></i> Enviar o pedido </button>
-                </div>
-            </div>
-          
-        </div>
-
-      </div>
+        </div> <!-- Modal Body -->
     </div>
   </div>
 
