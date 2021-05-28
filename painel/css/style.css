@@ -1,0 +1,40 @@
+html, body {
+    height: 100%;
+    background-color: #0e0e0e;
+  
+}
+
+/* CSS only for examples not required for centering */
+.container {
+    height: 100%;
+}
+
+/* show border around full height container */
+
+.form_vendedor {
+   background-color: #353430;
+   color: #fff;
+   border-radius: 5px;
+   padding: 20px;
+}
+
+.form_vendedor h1 {
+    font-size: 20px;
+}
+
+.msg {
+    display: none;
+}
+
+.form_cadastro {
+    background-color: #fff;
+    color: #444;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+ }
+ 
+ .form_cadastro h1 {
+     font-size: 20px;
+ }
+ 
